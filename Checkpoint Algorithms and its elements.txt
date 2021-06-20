@@ -1,0 +1,44 @@
+ALGORITHM CHECKPOINT_ALGORITHMS
+
+VAR
+    i,j,k: INTEGER;
+    nbr_words : INTEGER;
+    nbr_vowels : INTEGER;
+    sentence_length : INTEGER;
+    sentence:array_of_integer;
+BEGIN {
+	read(sentence);
+
+	for i from 0 to sentence.length-1 do 
+		IF (sentence[i] =='')  THEN
+     		nbr_words++ ;
+		END_IF
+	END
+
+
+	WHILE (sentence[j]<>'.') DO
+		sentence_length++ ;
+		END_WHILE
+		 
+
+	for k from 0 to sentence.length-1 do
+		IF (sentence[k]='a'or sentence[k]='e 'or sentence[k]='i' or sentence[k]='o' or sentence[k]= 'u'or sentence[k]= 'y') THEN
+			nbr_vowels++ ;
+		END_IF
+		
+	END
+
+
+	print (Length of the sentence is: "sentence_length")
+	print (Total  number of words is: "nbr_words")
+ 	print (Total  number of vowels is: "nbr_vowels")
+
+END
+		
+	
+
+
+
+	
+	
+
